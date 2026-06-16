@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crypto Market Research Skill"
+  short_description: "Crypto research with market-structure evidence"
+  default_prompt: "Use $crypto-market-research-skill to analyze a crypto asset, market report, structure thesis, or factor hypothesis with cited evidence."
