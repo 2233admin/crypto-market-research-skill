@@ -11,7 +11,7 @@ Use source categories to make crypto evidence auditable. Crypto data is venue-sp
 | On-chain and protocol data | TVL, revenue, fees, active addresses, flows, staking, emissions, unlocks, governance, bridge activity, and protocol health. | Record chain, contract/protocol scope, and methodology limits. |
 | Market data aggregators | Prices, market cap, volume, token metadata, circulating supply, and exchange coverage. | Use for broad context; verify critical figures against primary or specialist sources. |
 | Research and news | Protocol reports, market updates, governance posts, regulatory news, and macro-liquidity narratives. | Separate reported facts from interpretation and opinion. |
-| Social discourse data | Public X posts, trend context, community narratives, sentiment examples, and quote-backed catalyst checks. | Use only for narrative or sentiment evidence; record query, time window, endpoint/schema version, collection limits, and whether results came from Xquik or another source. |
+| Social discourse data | Public X posts, trend context, community narratives, sentiment examples, and quote-backed catalyst checks. | Use only for narrative or sentiment evidence; record platform, provider, query, time window, endpoint/schema version, collection limits, and collection timestamp. |
 
 ## Fallback Rules
 
