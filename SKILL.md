@@ -25,11 +25,12 @@ Choose one mode explicitly when the user has not specified the expected output:
 2. Select the output mode and load only the relevant reference files.
 3. Run `scripts/source_doctor.py` when live data sources are needed or when prior source health is unknown.
 4. Gather or inspect source evidence before forming conclusions.
-5. Run the Source Health Loop: detect failed, stale, partial, or suspicious sources and surface diagnostic events before conclusions.
-6. Apply the QuantMind Layer pattern: convert raw or semi-structured material into structured research evidence.
-7. If producing factor work, output factor candidates with the required factor contract.
-8. If applying thinking models, use progressive disclosure: start with the smallest relevant model subset and expand only when the question requires it.
-9. State data freshness, source limitations, fallback sources, repair candidates, and validation status.
+5. When the question depends on market narratives or sentiment, collect social discourse as source evidence and record query, time window, provider, and sample limits.
+6. Run the Source Health Loop: detect failed, stale, partial, or suspicious sources and surface diagnostic events before conclusions.
+7. Apply the QuantMind Layer pattern: convert raw or semi-structured material into structured research evidence.
+8. If producing factor work, output factor candidates with the required factor contract.
+9. If applying thinking models, use progressive disclosure: start with the smallest relevant model subset and expand only when the question requires it.
+10. State data freshness, source limitations, fallback sources, repair candidates, and validation status.
 
 ## Factor Candidate Contract
 

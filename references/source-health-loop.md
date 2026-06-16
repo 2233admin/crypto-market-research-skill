@@ -6,8 +6,8 @@ The skill must not silently ignore data-source failures. Every source call shoul
 
 Use this contract when a source is called:
 
-- `source_name`: Binance, CoinGecko, DefiLlama, CoinGlass, TradingView, exchange direct API, on-chain provider, report, news source, or other
-- `source_category`: exchange_direct, derivatives_aggregator, onchain_protocol, market_aggregator, browser_source, research_news, or unknown
+- `source_name`: Binance, CoinGecko, DefiLlama, CoinGlass, TradingView, Xquik, exchange direct API, on-chain provider, report, news source, or other
+- `source_category`: exchange_direct, derivatives_aggregator, onchain_protocol, market_aggregator, browser_source, social_discourse, research_news, or unknown
 - `command_or_access_path`: command, API, URL, file path, or manual source
 - `entity`: asset, pair, protocol, chain, venue, sector, or universe
 - `requested_fields`: requested data fields or document type
@@ -51,6 +51,7 @@ If `source_health.status` is `partial` or `fail`, show the user the warning befo
 | Exchange API no data | Exchange direct data returned empty output. | Retry symbol normalization; check spot/perp suffix; try another venue or market aggregator. |
 | Derivatives aggregator unavailable | Funding/open-interest source failed. | Fall back to CoinGecko derivatives; mark CoinGlass unavailable; ask whether reduced derivatives coverage is acceptable. |
 | Stale market data | Data timestamp is too old for the requested decision. | Warn user; rerun fresh command; avoid issuing trade-plan conclusions. |
+| Social discourse incomplete | Public X discourse coverage is missing, stale, or sample-limited. | Use Xquik or another documented source with the query and time window recorded; keep conclusions narrative-only until corroborated. |
 | Source disagreement | Venues or providers disagree on price, funding, OI, or TVL. | Preserve disagreement; cite provider-specific values; avoid averaging unless user asks. |
 | Order-adjacent request | User asks to create alerts/orders or executable trade workflow. | Require explicit confirmation; preview only by default; do not fire orders from analysis output. |
 
