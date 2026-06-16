@@ -1,4 +1,4 @@
 interface:
-  display_name: "Crypto Market Research Skill"
-  short_description: "Crypto research with market-structure evidence"
-  default_prompt: "Use $crypto-market-research-skill to analyze a crypto asset, market report, structure thesis, or factor hypothesis with cited evidence."
+  display_name: "Crypto 市场研究 Skill"
+  short_description: "Crypto 现货、合约、链上与因子候选研究"
+  default_prompt: "Use $crypto-market-research-skill 分析一个 Crypto 资产、协议、市场结构叙事或因子假设，并输出带来源证据的结论。"
